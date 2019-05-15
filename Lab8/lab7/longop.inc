@@ -1,0 +1,1 @@
+EXTERN DecFloat64_LONGOP : proc
