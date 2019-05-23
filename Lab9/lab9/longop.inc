@@ -1,0 +1,4 @@
+EXTERN Mul_Nx32_LONGOP : proc
+EXTERN Mul_NxN_LONGO : proc
+EXTERN StrDec : proc
+EXTERN Div10_LONGOP : proc

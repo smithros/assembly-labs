@@ -276,6 +276,7 @@ ret 12
 SHR_LONGOP endp
 
 DecFloat64_LONGOP proc
+
 push ebp
 mov ebp, esp
 
@@ -309,7 +310,7 @@ cmp eax, 0
 jz @plus
 
 @minus:
-mov byte ptr[ebx], 45
+mov byte ptr[ebx], 45; +/- ASCI
 jmp @exponent
 @plus:
 mov byte ptr[ebx], 43
@@ -353,7 +354,6 @@ and eax, dword ptr[esi + 4]
 mov dword ptr[fract_part + 4], eax
 
 jmp @final
-
 
 @more:
 add mantmask1, 1048575
